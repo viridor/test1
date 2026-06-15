@@ -51,14 +51,3 @@ if __name__ == "__main__":
     # הרצת השרת על הפורט ש-Render מקצה דינמית (בדרך כלל 10000)
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
-```
-eof
-
-### מה עוד צריך לעשות כדי שההעלאה ל-Render תצליח?
-
-בנוסף לקובץ `app.py` שיצרנו למעלה, עליך ליצור בתיקייה של הפרויקט שלך (לפני שאתה מעלה ל-GitHub) קובץ נוסף בשם `requirements.txt`. קובץ זה יגיד ל-Render אילו חבילות פייתון עליה להתקין.
-
-תוכן הקובץ `requirements.txt` צריך להיות:
-```text
-Flask==3.0.3
-pyTelegramBotAPI==4.20.0
